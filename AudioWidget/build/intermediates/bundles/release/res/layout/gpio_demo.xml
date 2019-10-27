@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout
+        android:id="@+id/gpio_demo_main"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dip"
+    	android:background="#7080A5" >
+
+    	<ImageView
+        	android:id="@+id/gpio_demo_status"
+        	android:src="@drawable/disconnect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="10dp" />
+    	
+    	<ImageView
+    	    android:id="@+id/gpio_demo_spp_status"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerVertical="true"
+    	    android:layout_toLeftOf="@+id/gpio_demo_status"
+    	    android:layout_marginRight="10dp"
+    	    android:src="@drawable/nospp" />
+    	
+    	<TextView 
+            android:id="@+id/gpio_demo_title" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true" 
+        	android:text="@string/gpio" 
+        	android:textSize="25sp" 
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" />	
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:layout_below="@+id/gpio_demo_main" >
+        
+        <TextView 
+	        android:id="@+id/gpio_demo_led_title" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:gravity="center"
+	        android:text="LED display" 
+	        android:textSize="25sp" 
+	        android:textColor="#000000"
+	        android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/gpio_demo_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gpio_demo_led_title"
+            android:layout_below="@+id/gpio_demo_led_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/gpio_demo_led1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpio_demo_led1_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ledblack" />
+
+            <TextView
+                android:id="@+id/gpio_demo_led1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="LED 1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <Switch
+	       		android:id="@+id/gpio_demo_led1_switch"
+	       		android:layout_below="@+id/gpio_demo_led1"
+	       		android:layout_width="100dp"
+	       		android:layout_height="35sp"
+	       		android:layout_centerHorizontal="true"
+	       		android:layout_marginTop="15dp"
+	       		android:gravity="center_vertical" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gpio_demo_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/gpio_demo_led_title"
+            android:layout_below="@+id/gpio_demo_led_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:id="@+id/gpio_demo_led2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="LED 2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/gpio_demo_led2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpio_demo_led2_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ledblack" />
+            
+            <Switch
+	       		android:id="@+id/gpio_demo_led2_switch"
+	       		android:layout_below="@+id/gpio_demo_led2"
+	       		android:layout_width="100dp"
+	       		android:layout_height="35sp"
+	       		android:layout_centerHorizontal="true"
+	       		android:layout_marginTop="15dp"
+	       		android:gravity="center_vertical" />
+        </RelativeLayout>
+        
+        <TextView 
+	        android:id="@+id/gpio_demo_button_title" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:layout_below="@+id/gpio_demo_layout2"
+	        android:gravity="center"
+	        android:text="Button Detection" 
+	        android:textSize="25sp" 
+	        android:textColor="#000000"
+	        android:textStyle="bold" />
+        
+        <Button 
+            android:id="@+id/gpio_demo_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignLeft="@+id/gpio_demo_led_title"
+            android:layout_below="@+id/gpio_demo_button_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Button 1" />
+        
+        <Button 
+            android:id="@+id/gpio_demo_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignRight="@+id/gpio_demo_led_title"
+            android:layout_below="@+id/gpio_demo_button_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:text="Button 2" />
+        
+        <LinearLayout 
+            android:id="@+id/gpio_demo_layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/gpio_demo_pattern1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="pattern1" />
+	        <Button 
+	            android:id="@+id/gpio_demo_pattern2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:text="pattern2" />
+	        <Button
+	            android:id="@+id/gpio_demo_pattern_stop"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="stop pattern" />
+	        
+        </LinearLayout>
+       
+    </RelativeLayout>
+    
+</RelativeLayout>

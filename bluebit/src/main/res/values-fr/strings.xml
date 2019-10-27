@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eSAJDA</string>
+    <string name="choose_language">"Choisissez la langue "</string>
+    <string name="count_two">2 RAKAT</string>
+    <string name="count_three">3 RAKAT</string>
+    <string name="count_four">4 RAKAT</string>
+    <string name="days">JOURS PRIÉS</string>
+    <string name="clear_count">ZERO RAKAT</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="run_gps">Lancer le GPS</string>
+    <string name="send_lat_long">Envoyer la latitude / longitude</string>
+    <string name="country">Pays</string>
+    <string name="city">Ville</string>
+    <string name="dialog_permission">L\'application a besoin des autorisations suivantes pour fonctionner.</string>
+    <string name="rationale_location">Cette application a besoin d\'accéder à votre position pour savoir où vous êtes.</string>
+    <string name="rationale_ask_again">Cette application peut ne pas fonctionner correctement sans les autorisations demandées. Ouvrez l\'écran des paramètres de l\'application pour modifier les autorisations de l\'application.</string>
+    <string name="title_settings_dialog">Autorisations requises</string>
+    <string name="setting">Paramètres</string>
+    <string name="cancel">Annuler</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="permission_rationale">La permission de localisation est nécessaire pour les fonctionnalités de base</string>
+    <string name="permission_denied_explanation">La permission a été refusée, mais est nécessaire pour les fonctionnalités de base.</string>
+    <string name="settings">Paramètres</string>
+    <string name="progress_loading">"Chargement, veuillez patienter "</string>
+    <string name="progress_insert">Insérer des villes .... Veuillez patienter</string>
+    <string name="choose_country">"Choisissez le pays "</string>
+    <string name="choose_city">"Sélectionnez une ville "</string>
+    <string name="city_lat_long">Ville sélectionnée Lat / Long</string>
+
+    <string name="choose_country_city">Veuillez sélectionner une ville ou exécuter un GPS</string>
+
+
+    <string name="stop_gps">Arrêter le GPS</string>
+    <string name="log">Bûche</string>
+    <string name="disconnected">Appareil déconnecté</string>
+    <string name="bluetooth_on">Bluetooth activé</string>
+    <string name="bluetooth_off">Bluetooth désactivé</string>
+    <string name="pray_time">Prière</string>
+    <string name="sunrise">lever du soleil</string>
+    <string name="fajr">Fajr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+
+</resources>

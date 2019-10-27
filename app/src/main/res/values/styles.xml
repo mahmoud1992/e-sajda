@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_800</item>
+        <item name="colorAccent">@color/md_red_800</item>
+        <item name="android:windowBackground">@color/md_grey_100</item>
+        <item name="android:colorControlHighlight">@color/heighlight_color</item>
+
+    </style>
+
+
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_800</item>
+        <item name="colorAccent">@color/md_red_800</item>
+        <item name="android:windowBackground">@color/md_grey_200</item>
+        <item name="android:colorControlHighlight">@color/heighlight_color</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="AppTheme.Edit" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_800</item>
+        <item name="colorAccent">@color/md_red_800</item>
+        <item name="android:windowBackground">@color/md_grey_200</item>
+        <item name="android:colorControlHighlight">@color/heighlight_color</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="EQPRESET_array">
+        <item>Flat</item>
+        <item>Boost</item>
+        <item>Treble</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Classic</item>
+        <item>Jazz</item>
+        <item>Dance</item>
+        <item>Rhythm and Blues</item>
+    </string-array>
+    <string-array name="EQSTAGE_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="EQPRESET">Equalizer Mode</string>
+    <string name="EQStage">Bands</string>
+    <string name="about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name"> Demo </string>
+    <string name="app_version"> Audio Widget\nVersion 1.18</string>
+    <string name="audioenhance">Audio Enhancement</string>
+    <string name="battery_detail">        After headset is connected, a battery meter will show on the left top of phone screen. </string>
+    <string name="bd_addr">Accessory Bluetooth address</string>
+    <string name="but_camera">Take Picture</string>
+    <string name="button1">SendVoicePrompt</string>
+    <string name="button2">synthesizeTXT</string>
+    <string name="copyright">Copyright 2013 Microchip. \n All Rights Reserved.</string>
+    <string name="devicename">Device Name</string>
+    <string name="enable1">Enable</string>
+    <string name="enable2">Enable</string>
+    <string name="eq"/>
+    <string name="equal">Equalizer</string>
+    <string name="find">Send a Tone</string>
+    <string name="fw_ver">Firmware Version</string>
+    <string name="gpio">IO control</string>
+    <string name="hello_world">Input your wanted text</string>
+    <string name="image_content">ISSC_App_images</string>
+    <string name="modify">Change</string>
+    <string name="noisecancel">Noise Cancellation</string>
+    <string name="onetap">One Tap Pairing</string>
+    <string name="onetap_note">Make sure :\n1. Your accessory is in pairing mode and next to your device\n2. Your device is not connected to another accessory</string>
+    <string name="recorder">Recorder</string>
+    <string name="renamedevice">Rename headset</string>
+    <string name="selecttone">Select a Ring Tone</string>
+    <string name="sendVoicePrompt">Manually start transferring voice prompt through SPP</string>
+    <string name="sendtone">Find My Accessory</string>
+    <string name="stop">Stop</string>
+    <string name="synthesizeTXT_brief">Synthesize the above text</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_camera">Camera</string>
+    <string name="volume">Adjust Volume</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="button_text">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">#ffffff</item>
+    	<item name="android:gravity">center</item>
+   	 	<item name="android:layout_margin">3dp</item>
+    	<item name="android:textSize">30sp</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:shadowColor">#000000</item>
+    	<item name="android:shadowDx">1</item>
+    	<item name="android:shadowDy">1</item>
+    	<item name="android:shadowRadius">2</item>
+    </style>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:height">40dp</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:height">20dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

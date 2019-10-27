@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		>
+		<ListView
+			android:id="@+id/devices_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+		<ViewStub
+			android:id="@+id/empty"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout="@layout/empty_list_view"
+			/>
+	</LinearLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+		>
+		<Button
+			android:id="@+id/btn_scan"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/scan"
+            android:background="@drawable/layout_button"
+            android:onClick="onClickBtnScan"
+			/>
+        <Button
+            android:id="@+id/btn_uuid"
+            android:layout_width="144dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/btn_scan"
+            android:layout_alignParentRight="true"
+            android:text="@string/UUID"
+			android:background="@drawable/layout_button"
+            android:onClick="onClickBtnUuid"
+            />
+
+	</RelativeLayout>
+</RelativeLayout>

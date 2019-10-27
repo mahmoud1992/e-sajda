@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AudioWidget/AudioWidget.iml" filepath="$PROJECT_DIR$/AudioWidget/AudioWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluebit/bluebit.iml" filepath="$PROJECT_DIR$/bluebit/bluebit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mBIoT2.iml" filepath="$PROJECT_DIR$/mBIoT2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transmitData/transmitData.iml" filepath="$PROJECT_DIR$/transmitData/transmitData.iml" />
+    </modules>
+  </component>
+</project>

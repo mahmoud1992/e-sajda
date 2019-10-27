@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:keepScreenOn="true"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@android:style/ButtonBar"
+		>
+		<TextView
+			android:id="@+id/picker_dev_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/main_info"
+			/>
+	</LinearLayout>
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		>
+	</ListView>
+
+	<LinearLayout
+		android:id="@android:id/empty"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/empty_function"
+			/>
+	</LinearLayout>
+
+</LinearLayout>
+

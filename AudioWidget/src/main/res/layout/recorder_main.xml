@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout
+        android:id="@+id/record_main"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dip"
+    	android:background="#7080A5" >
+
+    	<ImageView
+        	android:id="@+id/record_status"
+        	android:src="@drawable/disconnect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="10dp" />
+    	
+    	<ImageView
+    	    android:id="@+id/record_spp_status"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerVertical="true"
+    	    android:layout_toLeftOf="@+id/record_status"
+    	    android:layout_marginRight="10dp"
+    	    android:src="@drawable/nospp" />
+    	
+    	<TextView 
+            android:id="@+id/record_title" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true" 
+        	android:text="@string/recorder" 
+        	android:textSize="25sp" 
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" />	
+
+    </RelativeLayout>
+	
+    <ListView 
+        android:id="@+id/listViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/record_main"
+        android:layout_marginLeft="10dp" >
+
+   	</ListView>
+   	
+    <TextView
+        android:id="@+id/record_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/record_layout_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:text="No records" />
+    
+    <LinearLayout 
+        android:id="@+id/record_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    	
+        <ImageButton 
+			android:id="@+id/record"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:src="@drawable/rec"
+			android:background="#FFFFFF"
+			android:focusable="false"
+	        android:focusableInTouchMode="false" />
+	    
+	    <ImageButton 
+	        android:id="@+id/play"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:src="@drawable/play"
+	        android:background="#FFFFFF"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false" />
+    	
+    </LinearLayout>
+
+</RelativeLayout>

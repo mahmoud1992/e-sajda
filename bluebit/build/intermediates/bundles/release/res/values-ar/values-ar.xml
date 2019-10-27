@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eSAJDA</string>
+    <string name="asr">العصر</string>
+    <string name="bluetooth_off">إيقاف البلوتوث</string>
+    <string name="bluetooth_on">تشغيل البلوتوث</string>
+    <string name="cancel">إلغاء</string>
+    <string name="choose_city">اختر مدينة</string>
+    <string name="choose_country">حدد الدولة</string>
+    <string name="choose_country_city">يرجى تحديد المدينة أو تشغيل نظام تحديد المواقع</string>
+    <string name="choose_language">"اختر اللغة "</string>
+    <string name="city">مدينة</string>
+    <string name="city_lat_long">المدينة المختارة خطوط الطول / الطويل</string>
+    <string name="clear_count">صفر الركوع</string>
+    <string name="count_four">4 الركوع</string>
+    <string name="count_three">3 الركوع</string>
+    <string name="count_two">2 الركوع</string>
+    <string name="country">بلد</string>
+    <string name="days">"أيام الصلاة"</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="dialog_permission">يحتاج التطبيق بعد أذونات للعمل.</string>
+    <string name="disconnected">الجهاز غير متصل</string>
+    <string name="fajr">الفجر</string>
+    <string name="isha">العشاء</string>
+    <string name="latitude">خط العرض</string>
+    <string name="log">سجل</string>
+    <string name="longitude">خط الطول</string>
+    <string name="maghrib">المغرب</string>
+    <string name="no">لا</string>
+    <string name="permission_denied_explanation">تم رفض الإذن ، ولكن هناك حاجة للوظائف الأساسية.</string>
+    <string name="permission_rationale">مطلوب إذن الموقع للوظائف الأساسية</string>
+    <string name="pray_time">الصلاة</string>
+    <string name="progress_insert">إدخال المدن .... يرجى الانتظار</string>
+    <string name="progress_loading">جاري التحميل الرجاءالانتظار</string>
+    <string name="rationale_ask_again">قد لا يعمل هذا التطبيق بشكل صحيح بدون الأذونات المطلوبة. افتح شاشة إعدادات التطبيق لتعديل أذونات التطبيق.</string>
+    <string name="rationale_location">يحتاج هذا التطبيق إلى الوصول إلى موقعك لمعرفة مكانك.</string>
+    <string name="run_gps">تشغيل GPS</string>
+    <string name="send_lat_long">إرسال خط العرض / خط الطول</string>
+    <string name="setting">إعدادات</string>
+    <string name="settings">إعدادات</string>
+    <string name="stop_gps">وقف GPS</string>
+    <string name="sunrise">الشروق</string>
+    <string name="title_settings_dialog">الأذونات المطلوبة</string>
+    <string name="yes">نعم فعل</string>
+</resources>

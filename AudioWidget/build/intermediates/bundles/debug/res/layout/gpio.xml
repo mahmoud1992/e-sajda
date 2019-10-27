@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout
+        android:id="@+id/gpio_main"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dip"
+    	android:background="#7080A5" >
+
+    	<ImageView
+        	android:id="@+id/gpio_status"
+        	android:src="@drawable/disconnect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="10dp" />
+    	
+    	<ImageView
+    	    android:id="@+id/gpio_spp_status"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerVertical="true"
+    	    android:layout_toLeftOf="@+id/gpio_status"
+    	    android:layout_marginRight="10dp"
+    	    android:src="@drawable/nospp" />
+    	
+    	<TextView 
+            android:id="@+id/gpio_title" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true" 
+        	android:text="@string/gpio" 
+        	android:textSize="25sp" 
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" />	
+
+    </RelativeLayout>
+    
+    <ScrollView 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@id/gpio_main">
+	    
+	   <LinearLayout 
+	  		android:orientation="vertical" 
+	  		android:layout_width="fill_parent"
+	 		android:layout_height="wrap_content" >
+    
+	    	<!-- GPIO pin1 -->
+	    	<RelativeLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+	       		<ImageView 
+	       		    android:id="@+id/img_pin1"
+					android:src="@drawable/gpio_setting"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="15dp" />        
+	        	<TextView
+	            	android:id="@+id/descript_pin1"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_toRightOf="@id/img_pin1"
+	            	android:layout_alignParentBottom="true"
+	            	android:layout_marginLeft="5dp"
+	            	android:text="Pin 1: P1_6"
+	            	android:textStyle="bold"
+	            	android:textSize="20sp" />
+
+	        	<Button
+	        	    android:id="@+id/gpio_apply"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="40dp"
+	        	    android:layout_alignParentRight="true"
+	        	    android:layout_alignParentTop="true" 
+	        	    android:layout_marginRight="10dp"
+	        	    android:text="Apply All" />
+
+	    	</RelativeLayout>
+	        
+	    	<Switch
+	       		android:id="@+id/pin1_switch_dir"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="Out"
+	       		android:textOff="In"
+	       		android:textStyle="bold"
+	       		android:text="Pin Direction"
+	       		android:textSize="20sp" />
+	    	
+	    	<Switch
+	       		android:id="@+id/pin1_switch_value"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="High"
+	       		android:textOff="Low"
+	       		android:textStyle="bold"
+	       		android:text="Pin Status"
+	       		android:textSize="20sp" />
+	    	
+	    	<!-- GPIO pin2 -->
+	    	<RelativeLayout 
+	      		android:layout_marginTop="15dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+	        	<ImageView 
+	       		    android:id="@+id/img_pin2"
+					android:src="@drawable/gpio_setting"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="15dp" />
+	        	<TextView
+	            	android:id="@+id/descript_pin2"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_toRightOf="@id/img_pin2"
+	            	android:layout_centerVertical="true"
+	            	android:layout_marginLeft="5dp"
+	            	android:text="Pin 2: P0_1"
+	            	android:textStyle="bold"
+	            	android:textSize="20sp" />
+	    	</RelativeLayout>
+	    	
+	    	<Switch
+	       		android:id="@+id/pin2_switch_dir"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="Out"
+	       		android:textOff="In"
+	       		android:textStyle="bold"
+	       		android:text="Pin Direction"
+	       		android:textSize="20sp" />
+	    	
+	    	<Switch
+	       		android:id="@+id/pin2_switch_value"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="High"
+	       		android:textOff="Low"
+	       		android:textStyle="bold"
+	       		android:text="Pin Status"
+	       		android:textSize="20sp" />
+	    	
+	    	<!-- GPIO pin3 -->
+	    	<RelativeLayout 
+	      		android:layout_marginTop="15dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+	        	<ImageView 
+	       		    android:id="@+id/img_pin3"
+					android:src="@drawable/gpio_setting"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="15dp" />
+	        	<TextView
+	            	android:id="@+id/descript_pin3"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_toRightOf="@id/img_pin3"
+	            	android:layout_centerVertical="true"
+	            	android:layout_marginLeft="5dp"
+	            	android:text="Pin 3: P0_5"
+	            	android:textStyle="bold"
+	            	android:textSize="20sp" />
+	    	</RelativeLayout>
+	    	
+	    	<Switch
+	       		android:id="@+id/pin3_switch_dir"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="Out"
+	       		android:textOff="In"
+	       		android:textStyle="bold"
+	       		android:text="Pin Direction"
+	       		android:textSize="20sp" />
+	    	
+	    	<Switch
+	       		android:id="@+id/pin3_switch_value"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="High"
+	       		android:textOff="Low"
+	       		android:textStyle="bold"
+	       		android:text="Pin Status"
+	       		android:textSize="20sp" />
+	    	
+	    	<!-- GPIO pin4 -->
+	    	<RelativeLayout 
+	      		android:layout_marginTop="15dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+	        	<ImageView 
+	       		    android:id="@+id/img_pin4"
+					android:src="@drawable/gpio_setting"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="15dp" />
+	        	<TextView
+	            	android:id="@+id/descript_pin4"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_toRightOf="@id/img_pin4"
+	            	android:layout_centerVertical="true"
+	            	android:layout_marginLeft="5dp"
+	            	android:text="Pin 4: P2_7"
+	            	android:textStyle="bold"
+	            	android:textSize="20sp" />
+	    	</RelativeLayout>
+	    	
+	    	<Switch
+	       		android:id="@+id/pin4_switch_dir"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="Out"
+	       		android:textOff="In"
+	       		android:textStyle="bold"
+	       		android:text="Pin Direction"
+	       		android:textSize="20sp" />
+	    	
+	    	<Switch
+	       		android:id="@+id/pin4_switch_value"
+	       		android:layout_width="fill_parent"
+	       		android:layout_height="35sp"
+	       		android:layout_marginTop="1dp"
+	       		android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	        	android:layout_marginBottom="10dp"
+	        	android:background="@drawable/round"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	       		android:gravity="center_vertical"
+	       		android:textOn="High"
+	       		android:textOff="Low"
+	       		android:textStyle="bold"
+	       		android:text="Pin Status"
+	       		android:textSize="20sp" />
+	    		    	
+		</LinearLayout>	
+	</ScrollView>
+    
+</RelativeLayout>

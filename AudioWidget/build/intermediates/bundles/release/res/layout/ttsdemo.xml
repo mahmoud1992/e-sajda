@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IsscTtsDemo" >
+    
+    <RelativeLayout
+        android:id="@+id/tts_main"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dip"
+    	android:background="#7080A5" >
+
+    	<ImageView
+        	android:id="@+id/tts_status"
+        	android:src="@drawable/disconnect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="10dp" />
+    	
+    	<ImageView
+    	    android:id="@+id/tts_spp_status"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerVertical="true"
+    	    android:layout_toLeftOf="@+id/tts_status"
+    	    android:layout_marginRight="10dp"
+    	    android:src="@drawable/nospp" />
+    	
+    	<TextView 
+            android:id="@+id/tts_title" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true" 
+        	android:text="TTS" 
+        	android:textSize="25sp" 
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" />	
+
+    </RelativeLayout>
+    
+    <ScrollView 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tts_main"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp" >
+	    
+        <LinearLayout 
+	  		android:orientation="vertical" 
+	  		android:layout_width="fill_parent"
+	 		android:layout_height="wrap_content"
+	 		android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+		    <EditText 
+		        android:id="@+id/ttsdemo_inputTXT"
+		        android:background="@drawable/round"
+		        android:layout_width="fill_parent"
+		        android:layout_height="280sp"
+		        android:paddingLeft="5dp"
+		        android:paddingRight="5dp"
+		        android:textSize="20sp"
+		        android:gravity="top|left"
+		        android:hint="@string/hello_world" />
+		
+		    <TextView
+		        android:id="@+id/synthesizeTXT_brief"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/synthesizeTXT_brief"
+		        android:textSize="25sp" />
+		
+		    <Button
+		        android:id="@+id/button2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/button2"
+		        android:textSize="20sp" />
+		
+		    <TextView
+		        android:id="@+id/sendVoice"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/sendVoicePrompt"
+		        android:textSize="25sp" />
+		
+		    <Button
+		        android:id="@+id/button1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/button1"
+		        android:textSize="20sp" />
+    
+    
+    	</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

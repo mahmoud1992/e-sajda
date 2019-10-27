@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IsscEqPreset" >
+
+    <RelativeLayout
+        android:id="@+id/tts_main"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#7080A5" >
+
+        <ImageView
+            android:id="@+id/eq_status"
+            android:src="@drawable/disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/eq_spp_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/eq_status"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/nospp" />
+
+        <ImageView
+            android:id="@+id/EQ_PIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/image_content"
+            android:src="@drawable/equalizerpreset" />
+
+
+        <TextView
+            android:id="@+id/tts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Equalizer Preset"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/eqMainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:screenOrientation="portrait"
+        android:layout_below="@+id/tts_main"></RelativeLayout>
+
+</RelativeLayout>

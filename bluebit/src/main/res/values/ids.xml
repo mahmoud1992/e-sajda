@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="row_title" />
+	<item type="id" name="row_description" />
+	<item type="id" name="row_extra" />
+	<item type="id" name="row_icon" />
+	<item type="id" name="indicator_text" />
+</resources>

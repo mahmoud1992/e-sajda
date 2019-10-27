@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.issc"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application>
+        <receiver
+            android:name="com.issc.ui.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.issc.ui.PrayerActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.issc.ui.ActivityMain"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityDevicesList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityTransparent"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityDeviceDetail"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityFunctionPicker"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityAIO"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityWeight"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.issc.ui.ActivityFileChooser"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.issc.impl.LeService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.issc.ui.ActivityUUID"
+            android:exported="true"
+            android:label="UUID Settings"
+            android:parentActivityName="com.issc.ui.ActivityDevicesList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.issc.ui.ActivityDevicesList" />
+        </activity>
+        <activity
+            android:name="com.issc.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Edit" />
+        <activity
+            android:name="com.issc.ui.ScanDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNew" />
+    </application>
+
+</manifest>
